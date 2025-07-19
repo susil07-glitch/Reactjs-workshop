@@ -16,7 +16,7 @@ React is a JavaScript library for building **user interfaces**. It lets you crea
 - ✅ JSX syntax
 - ✅ Components (Functional)
 - ✅ Props and State
-- ⏳ React Hooks (useState, useEffect)
+- ✅ React Hooks (useState, useEffect)
 - ⏳ Handling Events
 - ⏳ Conditional Rendering
 - ⏳ Lists and Keys
