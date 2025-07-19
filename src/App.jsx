@@ -6,6 +6,7 @@ import Create from "./pages/create"
 import EditPage from "./pages/EditPage"
 import SinglePage from "./pages/SinglePage"
 import LearningUsestate from "./pages/LearningUsestate"
+import Home from "./pages/Home"
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
     <>
     <BrowserRouter>
      <Routes>
+      <Route path="/" element={<Home/>}></Route>
       <Route path="/Navbar"element={<Navbar/>}></Route>
       <Route path="/Card" element={<Card/>}></Route>
       <Route path="/Create"element={<Create/>}></Route>

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 # 🌱 My React Learning Workshop
 
@@ -9,6 +10,18 @@ React is a JavaScript library for building **user interfaces**. It lets you crea
 
 ---
 
+=======
+# 🌱 My React Learning Workshop
+
+Welcome to my React learning journey! This project contains all the notes, practice files, and mini-projects I’m building while learning React.js.
+
+## 📘 What is React?
+
+React is a JavaScript library for building **user interfaces**. It lets you create reusable components, handle user interaction, and update the UI efficiently.
+
+---
+
+>>>>>>> 7aa1e3f (add some api and useeffect)
 ## 🧠 Topics I'm Learning
 
 - ✅ What is React?
@@ -16,7 +29,11 @@ React is a JavaScript library for building **user interfaces**. It lets you crea
 - ✅ JSX syntax
 - ✅ Components (Functional)
 - ✅ Props and State
+<<<<<<< HEAD
 - ✅ React Hooks (useState, useEffect)
+=======
+- ⏳ React Hooks (useState, useEffect)
+>>>>>>> 7aa1e3f (add some api and useeffect)
 - ⏳ Handling Events
 - ⏳ Conditional Rendering
 - ⏳ Lists and Keys

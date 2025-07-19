@@ -1,2 +1,6 @@
 
   email :- basnetmanish089@gmail.com
+
+   for api call - fetch 
+     mockapi.io
+     call back function - is a functin that goes to other function as a argument ( useEffect)
