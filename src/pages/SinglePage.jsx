@@ -100,7 +100,7 @@ function SinglePage() {
         <h2 className="text-2xl text-gray-600">No blog found</h2>
         <button 
           onClick={() => navigate('/home')} 
-          className="mt-4 bg-blue-600 text-white px-4 py-2 rounded-lg"
+          className="mt-4 bg-green-600 text-white px-4 py-2 rounded-lg"
         >
           Back to Home
         </button>
@@ -136,14 +136,14 @@ function SinglePage() {
            <div className="flex flex-wrap gap-4">
              <button 
                onClick={handleDelete} 
-             className="bg-red-600 hover:bg-red-700 text-white px-6 py-3 rounded-lg shadow-md transition-colors"
+             className="bg-red-600 hover:bg-green-700 hover:cursor-pointer text-white px-6 py-3 rounded-lg shadow-md transition-colors"
              >DELETE POST
              </button>
              <button onClick={() => navigate('/home')} 
-               className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg shadow-md transition-colors"
+               className="bg-blue-600 hover:bg-blue-700 hover:cursor-pointer  text-white px-6 py-3 rounded-lg shadow-md transition-colors"
              >Back to Home
              </button>
-             <button onClick={handleRandomBlog}className="bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-lg shadow-md transition-colors"
+             <button onClick={handleRandomBlog}className="bg-green-600 hover:bg-green-700 hover:cursor-pointer  text-white px-6 py-3 rounded-lg shadow-md transition-colors"
              >Random Blog
              </button>
            </div>
