@@ -1,13 +1,32 @@
-import react from 'react'
-
+import react ,{ useState } from 'react'
+import axios from 'axios'
 const Create = () =>{
+  const[title,setTitle]=useState("")
+   const[subtitle,setSubtitle]=useState("")
+   const[Description,setDescription]=useState("")
+
+   console.log(title,"this is title")
+    console.log(subtitle,"this is subtitle")
+    console.log(Description,"this is description")
+
+
+    async function sentDataToBackend(e){
+        e.preventDefault()
+        const response = await axios.post("https://687af359abb83744b7ee4687.mockapi.io/blog",{
+            title : title,
+            subtitle : subtitle,
+            description : Description,
+
+        })
+        console.log(response)
+      }
   return (
     <div className ="min-h-screen bg-gray-50 py-8">
       <div className="container mx-auto p-4 max-w-4xl">
         <h1 className='text-3xl font-bold text-blue-800 text-center mb-8'>Create New Blog</h1>
 
         <div className="bg-white rounded-lg shadow-md p-6">
-          <form>
+          <form onSubmit={sentDataToBackend}>
             {/* making all form contents here with divs */}
             <div>
               <label className="block text-gray-600 font-medium mb-2"> Blog Title</label>
@@ -51,8 +70,7 @@ const Create = () =>{
                 <div className="pt-4">
               <button 
                 type="submit" 
-                className="w-full bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-4 rounded-lg"
-              >
+                className="w-full bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-4 rounded-lg" >
                 Create Blog Post
               </button>
             </div>

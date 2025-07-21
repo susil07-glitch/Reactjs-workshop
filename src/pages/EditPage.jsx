@@ -4,10 +4,14 @@ import axios from 'axios'
 
 const Edit = () =>{
   const navigate = useNavigate()
+  const [title,setTitle]=useState("")
+  const [subtitle,setsubtitle]=useState("")
+  const [description,setDescription]=useState("")
+  
   const {id} = useParams()
   const [blogData,setBlogData] = useState({
     title:'',
-    'sub-title' : ' ',
+    subtitle :"",
     description:"",
     image:"",
     createdAt:''
@@ -21,8 +25,8 @@ const Edit = () =>{
     }else{
       // Passing Default data 
       setBlogData({
-        title:"Sample BLog TITLe",
-        'sub-title': 'Technology',
+        title:"Enter Blog Title",
+        subtitle: 'Technology',
         description: 'THis is a sample blog content.',
         image: '',
         createdAt: new Date().toLocaleDateString()
@@ -37,10 +41,11 @@ const Edit = () =>{
       if(response.status ===200){
         setBlogData({
           title:response.data.title || ' ',
-          'sub-title' :response.data.subtitle || response.data[' sub-title'] ||'',
+          subtitle:response.data.subtitle || response.data[' sub-title'] ||'',
           description:response.data.description || ' ',
           image: response.data.image || '',
-        createdAt: response.data.createdAt || ' '       })
+        createdAt: response.data.createdAt || ' '       
+      })
       }
     }catch(error){
       alert("Error Loading Blog For Editing ! ")

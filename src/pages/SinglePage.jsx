@@ -91,7 +91,7 @@ function SinglePage() {
   }
 
   if(loading) {
-    return <div className="p-8 text-center text-blue-600 text-3xl">Please wait the page is Loading...</div>
+    return <div className="p-8 text-center text-blue-600 text-3xl"> Loading...</div>
   }
 
   if(!blog || Object.keys(blog).length === 0) {
