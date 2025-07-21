@@ -32,12 +32,13 @@ React is a JavaScript library for building **user interfaces**. It lets you crea
 <<<<<<< HEAD
 - ✅ React Hooks (useState, useEffect)
 =======
-- ⏳ React Hooks (useState, useEffect)
+- ✅ React Hooks (useState, useEffect)
 >>>>>>> 7aa1e3f (add some api and useeffect)
-- ⏳ Handling Events
-- ⏳ Conditional Rendering
-- ⏳ Lists and Keys
-- ⏳ Building small projects
+- ✅ Handling Events
+- ✅Conditional Rendering
+- ✅Lists and Keys
+- ✅ Building small projects
+- ⏳ Hosting 
 
 ---
 
